@@ -35,3 +35,8 @@ def login_view(request):
 
 
 </div>
+
+
+#since only login and singup option required, i can use the auth.urls, but 
+#will use custom view for each urls.
+# path('accounts/',include('django.contrib.auth.urls'))

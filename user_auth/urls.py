@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include("accounts.urls")),
-    path('accounts/',include('django.contrib.auth.urls'))
+    
+    # this will connect to the accounts app urls
+    path('',include("accounts.urls")),    
 ]

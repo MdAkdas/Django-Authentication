@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts'
+    'accounts' #account app will handle the user authentication
 ]
 
 MIDDLEWARE = [
@@ -67,8 +67,8 @@ TEMPLATES = [
         },
     },
 ]
-LOGIN_REDIRECT_URL = 'dashboard'
-LOGOUT_REDIRECT_URL = 'home' 
+LOGIN_REDIRECT_URL = 'dashboard' #must login to view this page
+LOGOUT_REDIRECT_URL = 'home' #where login, signup option 
 
 WSGI_APPLICATION = 'user_auth.wsgi.application'
 

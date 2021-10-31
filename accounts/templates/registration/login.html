@@ -1,0 +1,15 @@
+
+<div align='center' style="margin-top: 50px">
+
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Login">
+        <br>
+        <p>Wants to create a new account?</p>
+        <button onclick="location.href = '/accounts/sign_up'">Sign-Up</button>
+    
+    </form>
+
+
+</div>

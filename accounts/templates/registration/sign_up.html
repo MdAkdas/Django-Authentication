@@ -1,0 +1,7 @@
+<div align='left' style="margin-top: 50px">
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Sign up">
+    </form>
+</div>

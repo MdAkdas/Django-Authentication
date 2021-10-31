@@ -17,3 +17,21 @@ def login_view(request):
             messages.error(request,"Invalid username or password.")
         form = AuthenticationForm()
     return redirect('home')
+
+
+
+<div align='center' style="margin-top: 50px">
+    <h3><a href="/">Home</a></h3
+
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Login">
+        <br>
+        <p>Wants to create a new account?</p>
+        <button onclick="location.href = '/accounts/sign_up'">Sign-Up</button>
+    
+    </form>
+
+
+</div>
